@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 300px;
+    height: 320px;
+    border: 3px solid rgb(158, 107, 107);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body:has(.container > .blue1:checked) {
+    background-color: darkblue;
+}
+
+body:has(.container > .red1:checked) {
+    background-color: darkred;
+}
+
+body:has(.container > .green1:checked) {
+    background-color: darkgreen;
+}
+
+body:has(.container > .yellow1:checked) {
+    background-color: darkgoldenrod;
+}
+
+span {
+    color: goldenrod;
+}
